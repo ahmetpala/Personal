@@ -13,7 +13,6 @@ reports_original<-read.xlsx("C:/Users/ahmet.pala/Desktop/Ahmet Pala - Personal/M
 reports<-reports_original[,-c(3,7,33,34)]
 colnames(reports)[9]<-"Ts"
 
-
 plotting<-function(Hull_No,Load_Cond){
   idata<-data.frame(reports[reports$Model_No==Hull_No,])
   x=reports[reports$Model_No==Hull_No & reports$Loading_Condition == Load_Cond,32]
