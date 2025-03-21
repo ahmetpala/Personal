@@ -399,7 +399,6 @@ plot(lm.wtf,which = 1)
 AIC(lm.wtf) 
 summary(lm.wtf) 
 
-
 results.lm.wtfr<-(data.frame(exp(predict(lm.wtf,test.data))))
 colnames(results.lm.wtfr)<-"LMER"
 results.lm.wtfr<-cbind(test.data,results.lm.wtfr)
